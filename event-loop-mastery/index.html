@@ -1,0 +1,38 @@
+<!-- The goal is to build a simple logger that shows the execution order in real time page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loop Visualizer</title>
+</head>
+<body>
+    <header>
+        <h1>Header resides here</h1>
+    </header>
+    <main>
+        <section>
+            <button id="btn-basic" style="padding: 10px; margin: 10px; background-color: blue;">Run Basic Demo</button>
+            <button id="btn-promise" style="padding: 10px; background-color: yellowgreen;">Run Promise Demo</button>
+            <button id="btn-clear" style="padding: 10px; margin: 10PX; background-color: red;">Clear Log</button>
+        </section>
+        <section>
+            <div id="log-output" 
+            style="min-height: 300PX; 
+             border: 2PX solid black; 
+             padding: 10px;
+             font-family: monospace;">
+            
+            </div>
+        </section>
+      
+        
+    </main>
+   <footer>
+        <p>FOOTER CONTENT</p>
+   </footer>
+   
+    <script src="logger.js"></script>
+    <script src="demo1-basics.js"></script>
+</body>
+</html>

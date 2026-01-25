@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="container">
+        <div id="input-container">
+            <label for="">
+                Add Task
+                <input type="text" id="task-input">
+            </label>
+            <button type="submit" id="add-btn">Add</button>
+        </div>
+        <div>
+            <button id="filter-all">All</button>
+            <button id="filter-active">Active</button>
+            <button id="filter-completed">Complete</button>
+        </div>
+        <div id="display-area">
+            <ul id="task-list">
+
+            </ul>
+        </div>
+        <div id="control-section">
+            <button id="undo-btn">Undo</button>
+            <button id="clear-completed">Completed</button>
+            <p id="task-count"></p>
+        </div>
+    </section>
+    <script src="store.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
