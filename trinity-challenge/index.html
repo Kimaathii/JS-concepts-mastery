@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="body-container">
+        <div id="input-section">
+            <label for="">
+                Add task
+                <input type="text">
+            </label>
+            <button>Add</button>
+
+        </div>
+        <div id="filter-section">
+            <button id="filter-all">All</button>
+            <button id="filter-active">Active</button>
+            <button id="filter-completed">Completed</button>
+        </div>
+        <div id="display-section">
+            <ul id="display-taskList">
+                <!-- display taskList  In li tag-->
+                <!--append input tag with type checkbox to toggle task completion -->
+                <!-- append delete button to delete individual task -->
+                 <li>TASK 1</li>
+            </ul>
+          
+        </div>
+        <div id="bulk-action">
+            <div class="action-buttons">
+                <button id="clear-completed">Clear Completed</button>
+                <button id="undo-cleared">Undo</button>
+                <button id="redo-btn">Redo</button>
+            </div>
+            <p id="task-count"></p>
+        </div>
+    </section>
+    <script src="store.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

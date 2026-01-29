@@ -1,0 +1,221 @@
+/* Universal starter - use for every project */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f5f5f5;
+}
+
+/* Container styles */
+#body-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Form elements */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Input Section */
+#input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#input-section label {
+    flex: 1;
+}
+
+#input-section input {
+    margin-top: 5px;
+}
+
+#input-section input.error {
+    border-color: #ff4444;
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Filter Section */
+#filter-section {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+#filter-section button {
+    flex: 1;
+    background: #f0f0f0;
+    color: #333;
+    margin: 0;
+}
+
+#filter-section button:hover {
+    background: #e0e0e0;
+}
+
+#filter-section button.active {
+    background: #007bff;
+    color: white;
+}
+
+/* Task List */
+#display-taskList {
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+.task-item:hover {
+    background-color: #f9f9f9;
+}
+
+.task-item input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+
+.task-item span {
+    flex: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.task-item span.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+    color: #666;
+}
+
+.task-item .edit-input {
+    flex: 1;
+    padding: 5px;
+    border: 2px solid #007bff;
+}
+
+.task-item .delete-btn {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: #ff4444;
+    font-size: 20px;
+    line-height: 1;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.task-item .delete-btn:hover {
+    background: #cc0000;
+}
+
+/* Bulk Actions */
+#bulk-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    border-top: 2px solid #eee;
+}
+
+#bulk-action .action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#bulk-action button {
+    margin: 0;
+}
+
+#clear-completed {
+    background: #ff6b6b;
+}
+
+#clear-completed:hover {
+    background: #ff5252;
+}
+
+#undo-cleared {
+    background: #ffa500;
+}
+
+#undo-cleared:hover {
+    background: #ff8c00;
+}
+
+#redo-btn {
+    background: #4caf50;
+}
+
+#redo-btn:hover {
+    background: #45a049;
+}
+
+#task-count {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
